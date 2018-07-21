@@ -1,0 +1,66 @@
+:root {
+    --first-color: steelblue;
+    --second-color: coral;
+}
+
+.container {
+    /* max-width: 300px; */
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, minmax(1rem, 4rem));
+    grid-gap: 1px;
+    grid-auto-flow: row dense;
+    color: white;
+}
+
+.item:first-of-type {
+    background-color: var(--first-color);
+}
+
+.item:nth-child(2) {
+    background-color: var(--second-color);
+    grid-column: span 2;
+}
+
+.item:nth-child(3) {
+    background-color: var(--first-color);
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item:nth-child(4) {
+    background-color: var(--second-color);
+}
+
+.item:nth-child(5) {
+    background-color: var(--first-color);
+}
+
+.item:nth-child(6) {
+    background-color: var(--second-color);
+    grid-column: span 3;
+}
+
+.item:nth-child(7) {
+    background-color: var(--first-color);
+}
+
+.item:nth-child(8) {
+    background-color: var(--second-color);
+    grid-column: span 2;
+}
+
+.item:nth-child(9) {
+    background-color: var(--first-color);
+    grid-row: span 2;
+}
+
+.item:nth-child(10) {
+    background-color: var(--second-color);
+    grid-column: span 2;
+    grid-row: span 2; 
+}
+

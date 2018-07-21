@@ -1,0 +1,67 @@
+:root {
+    --calendar-item-width: calc(100% / 7);
+    --calendar-item-margin: 4px;
+    --calendar-item-inner-width: calc(var(--calendar-item-width) - calc(var(--calendar-item-margin) * 2));
+}
+
+.calendar {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    background-color: slategray;
+    border-radius: 5px;
+}
+
+.calendar__header {
+    background-color: steelblue;
+}
+
+.calendar__month {
+    text-align: center;
+    line-height: 2em;
+    color: white;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar__week {
+    display: flex;
+}
+
+
+
+.calendar__item {
+    width: var(--calendar-item-inner-width);
+    text-align: center;
+    margin: var(--calendar-item-margin);
+    color: white;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 10%;
+}
+
+.calendar__dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.calendar__date:first-of-type {
+    margin-left: calc(var(--calendar-item-width) * 4 + var(--calendar-item-margin));
+}
+
+.calendar__month::after {
+    content: ">"
+    
+}
+.calendar__month::before {
+    content: "<"
+
+}
+
+.calendar__month::before,
+.calendar__month::after {
+    width: var(--calendar-item-width);
+    text-align: center;
+}

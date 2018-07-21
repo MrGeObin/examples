@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    background-color: lightgray;
+    flex-direction: column;
+    
+}
+
+.container {
+    padding: 10px
+    margin: auto;   
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 100vh;
+
+
+p {
+    padding: 10px;
+}
+
+aside {
+    background-color: brown;
+    padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        flex-direction: column;
+    }
+    aside {
+        order: -1;
+    }
+}

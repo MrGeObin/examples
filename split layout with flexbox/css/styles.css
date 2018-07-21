@@ -1,0 +1,63 @@
+body {
+    background-color: steelblue;
+}
+
+.title {
+    line-height: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border: 1px dashed snow;  
+          
+}
+
+.wrapper {
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+
+}
+
+.split {
+    width: 90%;
+    height: 50vh;
+}
+ 
+.split-item {
+    line-height: 1.3rem;
+}
+.split-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1.8rem;
+}
+
+.split-title h1 {
+    line-height: 2.5em;
+}
+
+@media screen and (min-width: 64em) {
+    .split_container {
+        display: flex;
+        margin-bottom: 1.5em;
+    }
+
+    .split_title, 
+    .split_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .split_container:nth-child(2) {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+}

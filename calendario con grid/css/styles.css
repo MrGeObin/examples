@@ -1,0 +1,21 @@
+.calendar {
+    max-width: 400px;
+    background-color: steelblue;
+    padding: 5px;
+    color: white;
+}
+        
+.calendar__week {
+        display: flex;
+        justify-content: space-around;
+    }
+        
+.calendar__month { text-align: center; }
+    
+.calendar__dates {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(7, auto);
+    }
+        
