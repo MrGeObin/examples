@@ -5,7 +5,7 @@ body {
     padding: 10px;    
 }
 
-/* header Styles */
+/* ---------------header Styles---------- */
 
 .header {
     height: 60px;
@@ -29,13 +29,16 @@ body {
     text-align: center;
     line-height: 30px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
+/* ---------- menu styles -------- */
 .nav {
     position: absolute;
     top: 60px;
-    left: 0;
+    left: -100%;
     width: 100%;
+    transition: all 0.5s;
 }
 
 .menu__link {
@@ -50,4 +53,8 @@ body {
 .menu__link:hover {
     background-color: #fff;
     color: steelblue;
+}
+
+.mostrar {
+    left: 0 ;
 }
