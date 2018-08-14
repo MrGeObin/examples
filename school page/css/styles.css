@@ -1,0 +1,53 @@
+h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; } 
+
+body { 
+    font-family: 'Open Sans', sans-serif; 
+    padding: 10px;    
+}
+
+/* header Styles */
+
+.header {
+    height: 60px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo .icon-menu { margin: 5px; }
+
+.icon-menu {
+    padding: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+.menu__link {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: steelblue;
+    color: #fff;
+    padding: 1em;
+}
+
+.menu__link:hover {
+    background-color: #fff;
+    color: steelblue;
+}
