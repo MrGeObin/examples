@@ -1,8 +1,7 @@
 h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; } 
 
 body { 
-    font-family: 'Open Sans', sans-serif; 
-    padding: 10px;  
+    font-family: 'Open Sans', sans-serif;
       
 }
 
@@ -15,6 +14,7 @@ body {
 .header .container {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .logo .icon-menu { margin: 5px; }
@@ -68,14 +68,13 @@ body {
     left: 0;
     z-index: -1;
     height: 25vh;
-    opacity: 0.7;
-    
+    opacity: 0.8;
 }
 
 .b__container {
     text-align: center;
     width: 100%;
-    margin-bottom: 115px;;
+    margin-bottom: 120px;
 }
 
 .banner__txt { display: none; }
@@ -96,11 +95,13 @@ body {
 /* --------- cursos styles ------------------ */
 .section__title { 
     text-align: center;
-    color: steelblue;    
+    color: steelblue;
+    line-height: 1.5em;
 }
 
 .cursos__title { 
     font-size: 1.5rem;
+    line-height: 1.5em;
     text-align: center;
     border-bottom: 1px solid #fff;
 
@@ -120,3 +121,17 @@ body {
     padding: 10px;
 }
 
+.footer {
+    width: 100%;
+    background-color: steelblue;
+    height: 15vh;
+    color: #fff;
+    padding: 7px;
+    align-items: center;
+}
+
+.footer__social {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+}
