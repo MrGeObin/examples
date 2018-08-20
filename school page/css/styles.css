@@ -2,7 +2,8 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; }
 
 body { 
     font-family: 'Open Sans', sans-serif; 
-    padding: 10px;    
+    padding: 10px;  
+      
 }
 
 /* ---------------header Styles---------- */
@@ -50,11 +51,72 @@ body {
     padding: 1em;
 }
 
-.menu__link:hover {
+.menu__link:hover, .select {
     background-color: #fff;
     color: steelblue;
 }
 
 .mostrar {
     left: 0 ;
+} 
+
+/* ------- Banner Styles -------------- */
+
+.banner__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 25vh;
+    opacity: 0.7;
+    
 }
+
+.b__container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 115px;;
+}
+
+.banner__txt { display: none; }
+
+/* ---------info styles ------------------ */
+
+.info__column {
+    background-color: steelblue;
+    padding: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.info__img { margin-bottom: 12px;}
+
+/* --------- cursos styles ------------------ */
+.section__title { 
+    text-align: center;
+    color: steelblue;    
+}
+
+.cursos__title { 
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+
+}
+.cursos__column {
+    position: relative;
+    margin-bottom: 12px;
+}
+.cursos__description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    width: 60%;   
+    height: 100%;
+    padding: 10px;
+}
+
