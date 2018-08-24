@@ -2,13 +2,13 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Yanone Kaffeesatz', sans-serif; }
 
 body { 
     font-family: 'Open Sans', sans-serif;
-      
 }
 
 /* ---------------header Styles---------- */
 
 .header {
     height: 60px;
+    color: #fff;
 }
 
 .header .container {
@@ -47,13 +47,13 @@ body {
     display: block;
     text-align: center;
     background-color: steelblue;
-    color: #fff;
     padding: 1em;
 }
 
 .menu__link:hover, .select {
     background-color: #fff;
     color: steelblue;
+    font-size: 1.2rem;
 }
 
 .mostrar {
@@ -68,13 +68,16 @@ body {
     left: 0;
     z-index: -1;
     height: 25vh;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 
 .b__container {
-    text-align: center;
+    color: #fff;
+    margin-top: 30px;
     width: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
+    padding: 10px;
+
 }
 
 .banner__txt { display: none; }
@@ -129,10 +132,14 @@ body {
     align-items: center;
 }
 
+.copy,
 .footer__social {
     text-align: center;
     color: #fff;
+}
+
+.footer__social {
     font-size: 1.7em;
     margin-bottom: 10px;
-    cursor: pointer;
+    cursor: pointer;    
 }
