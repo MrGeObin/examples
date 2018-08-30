@@ -150,7 +150,7 @@ body {
 
 @media screen and (min-width: 480px) {
     .logo { font-size: 40px; }
-    .banner__img {height: 35%;} 
+    .banner__img {height: 37vh;} 
     .banner__title { 
         font-size: 30px;
         margin: 5px 0;
@@ -192,6 +192,8 @@ body {
 }
 @media screen and (min-width: 768px) {
     .banner__title { font-size: 50px; }
+    .banner__img {height: 40vh;} 
+    .cursos {width: 78%;}
     .cursos__title { font-size: 40px; }
 }
 @media screen and (min-width: 1024px) {
