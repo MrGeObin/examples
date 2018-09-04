@@ -74,8 +74,12 @@ body {
     /* opacity: 0.8; */
 }
 
+.banner__title {
+    font-size: 20px;
+}
+
 .container {
-    padding: 5px 10px;
+    padding: 2px 10px;
     color: #fff;
 }
 
@@ -86,7 +90,7 @@ body {
 .info__column {
     background-color: steelblue;
     padding: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     text-align: center;
     color: #fff;
 }
@@ -94,10 +98,7 @@ body {
 .info__img { margin-bottom: 12px;}
 
 /* --------- cursos styles ------------------ */
-.cursos {
-    width: 95%;
-    margin: auto;
-}
+
 .section__title { 
     text-align: center;
     color: steelblue;
@@ -126,6 +127,7 @@ body {
     padding: 10px;
 }
 
+/* -------footer styles----------- */
 .footer {
     width: 100%;
     background-color: steelblue;
@@ -193,30 +195,63 @@ body {
 @media screen and (min-width: 768px) {
     .banner__title { font-size: 50px; }
     .banner__img {height: 40vh;} 
-    .cursos {width: 78%;}
     .cursos__title { font-size: 40px; }
 }
 @media screen and (min-width: 1024px) {
+   .h_container {
+    background-color: rgba(0, 0, 0, .3);
+   }
+
+   .logo {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
     .container {
          width: 80%;
     }
     .nav {
         position: static;
         width: auto;
+        color: #fff;
     }
-    .menu {
-        display: flex;
+    .nav__menu {
+        display: flex; 
+        list-style-type: none;   
     }
+
+   
+    .menu__link:hover, .select  {
+        border-bottom: 5px solid steelblue;
+        border-radius: 50% 50% 0 0;
+    }
+    .menu__item {
+        padding-left: 15px;
+    }
+    
+
     .icon-menu{ display: none; }
     .menu__link { 
         background: none;
         font-size: 20px;
+        color: #fff;
+        text-decoration: none;
     }
     .select {
-        color: #fff;
-        background-color: steelblue;
+        border-bottom: 5px solid steelblue;
+        background-color: #fff;
+        color: steelblue;
+        
     }
-    .banner__title { font-size: 60px; }
-    .cursos__title { font-size: 50px; }
+    .banner__img {height: 90vh;} 
 
+    .banner__title { font-size: 60px; }
+    .cursos__title { font-size: 30px; }
+    .cursos__txt, .info__txt { font-size: 22px; }
+    .banner__txt {
+        font-size: 30px; 
+        margin-bottom: 280px; 
+    }
+    .section__title {font-size: 50px;}
 }
